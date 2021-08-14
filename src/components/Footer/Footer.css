@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap");
+.footer_text {
+    text-align: center;
+    font-family: "Vollkorn", serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    background-color: #333333;
+    bottom: 0px;
+}
+
+.footer_icon {
+    margin-bottom: -5px;
+}
+
+.react-logo-footer {
+    margin-bottom: -3px;
+}
