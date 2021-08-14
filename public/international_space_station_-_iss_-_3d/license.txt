@@ -1,0 +1,11 @@
+Model Information:
+* title:	International Space Station - ISS - 3D
+* source:	https://sketchfab.com/3d-models/international-space-station-iss-3d-a40e6888dcaa4e0297dd27d29e475151
+* author:	arnaudbanner (https://sketchfab.com/arnaudbanner)
+
+Model License:
+* license type:	CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+* requirements:	Author must be credited. Modified versions can not be distributed. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "International Space Station - ISS - 3D" (https://sketchfab.com/3d-models/international-space-station-iss-3d-a40e6888dcaa4e0297dd27d29e475151) by arnaudbanner (https://sketchfab.com/arnaudbanner) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)

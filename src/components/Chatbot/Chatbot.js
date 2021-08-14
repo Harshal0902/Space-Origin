@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import { useHistory } from "react-router-dom";
+import ChtbotImg from "../../assets/chatbot.png"
 
 const theme = {
     background: "#F4F5F6",
@@ -140,12 +141,12 @@ function Chatbot() {
                     handleEnd={handleEnd}
                     opened={opened}
                     headerTitle="Space Bot"
-                    botAvatar={"https://cdn.imgbin.com/7/4/22/imgbin-space-suit-astronaut-outer-space-drawing-astronaut-tqnbVky6vcbJwUxptkc47J3DR.jpg"}
+                    botAvatar={ChtbotImg}
                     avatarStyle={{ borderRadius: "100%" }}
                     floating={true}
                     floatingIcon={
                         <img
-                            src={"https://cdn.imgbin.com/7/4/22/imgbin-space-suit-astronaut-outer-space-drawing-astronaut-tqnbVky6vcbJwUxptkc47J3DR.jpg"}
+                            src={ChtbotImg}
                             style={{ width: "70%" }}
                             alt="chatBot icon"
                         />
