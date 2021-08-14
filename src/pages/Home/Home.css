@@ -1,0 +1,9 @@
+.body {
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+    
+  height: 80vw;
+  width: 30vw;
+}

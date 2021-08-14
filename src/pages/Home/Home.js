@@ -1,9 +1,13 @@
 import React from "react";
-
+import "./Home.css";
 function Home() {
   return (
     <>
-      <h1> You're Home</h1>
+      <div className="body">
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+      </div>
     </>
   );
 }
