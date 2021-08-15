@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import Sawo from "sawo";
-import Main from "./main"
+import Main from "./main";
+import './App.css';
+//import Navbar from "./components/Navbar/Navbar";
+
 
 const API_KEY = "bf9b6c3d-3a10-4c85-ad24-307404a438d1";
 
@@ -24,15 +27,17 @@ const LoginPage = () => {
   }, []);
 
   return (
-    <section>
-      {!isUserLoggedIn ? (
-        <div className="login-form">
-          <div className="formContainer" id="sawo-container"></div>
-        </div>
-      ) : (
-        <Main />
-      )}
-    </section>
+    <div className='App'>
+      {/* <Navbar/> */}
+      <div className='login'>
+        <h1>Login</h1>
+        {!isUserLoggedIn ? (
+            <div className="formContainer" id="sawo-container"></div>
+        ) : (
+          <Main/>
+        )}
+      </div>
+    </div>
   );
 };
 
