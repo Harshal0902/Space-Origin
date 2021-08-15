@@ -1,58 +1,67 @@
-.container {
+.desc {
+  display: flex;
+  justify-content: center;
+  color: #eee;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+.desc p {
+  width: 70%;
+}
+.about-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.card-body {
+  height: 80vh;
   display: flex;
   justify-content: space-around;
 }
-
-.box {
-  height: 80vh;
-  width: 20vw;
-  margin: 2rem 1rem;
-  cursor: pointer;
-}
-.box-1 {
-  background: url(../../assets/1.PNG) no-repeat;
-}
-.box-2 {
-  background: url(../../assets/2.PNG) no-repeat;
-  cursor: default;
-}
-
-.box-3 {
-  background: url(../../assets/3.png) no-repeat;
-}
-.box:hover {
-  transform: scale(1.05);
-  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s;
-}
-.box-2:hover {
-  transform: scale(1);
-}
-.box-inline {
-  height: 100%;
+.card {
+  user-select: none;
+  margin: 2rem;
+  height: 350px;
+  width: 250px;
+  border: 1px solid white;
+  background-color: #eee;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
-  color: white;
+  border-radius: 4px;
   flex-direction: column;
+  box-shadow: 0 10px 30px rgb(255 255 255 / 50%);
+  cursor: default;
 }
-.box-inline p {
-  font-weight: 400;
-  margin-top: 15rem;
-  font-size: 18px;
-  line-height: 1.7;
+.card:hover {
+  transform: scale(1.05);
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+.avatar {
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  border-radius: 100px;
+
+  background-size: cover;
+
+  background-position: top center;
+}
+.text {
   padding: 1rem;
   text-align: justify;
-  background: -webkit-linear-gradient(#56585e, #171344);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-/* .paragraph {
-  margin-top: 25rem;
-  padding: 1rem;
-  text-align: justify;
-  color: darkblue;
+.link {
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
 }
-.title {
-  position: absolute;
-} */
+.link span {
+  padding: 0rem 1rem;
+}
+.link span:hover {
+  font-size: 23px;
+}
