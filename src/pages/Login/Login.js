@@ -34,7 +34,7 @@ const LoginPage = () => {
         {/* <Navbar/> */}
         <div>
           {" "}
-          <h1 style={{ color: "#fff" }}>Space Origin 🌌</h1>
+          <h1 className="text-4xl my-4 font-fontVollkorn" style={{ color: "#fff" }}>Space Origin 🌌</h1>
         </div>
 
         <div className="login-box">

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Perseverance - NASA Mars Landing 2021
+* source:	https://sketchfab.com/3d-models/perseverance-nasa-mars-landing-2021-c1c94e1f69df45eeae4a0a1d0d27e85b
+* author:	Thomas Flynn (https://sketchfab.com/nebulousflynn)
+
+Model License:
+* license type:	CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)
+* requirements:	Credit is not mandatory. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Perseverance - NASA Mars Landing 2021" (https://sketchfab.com/3d-models/perseverance-nasa-mars-landing-2021-c1c94e1f69df45eeae4a0a1d0d27e85b) by Thomas Flynn (https://sketchfab.com/nebulousflynn) licensed under CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+
+.spacecraft_body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.spacecraft_title {
+    display: grid;
+    place-items: center;
+    font-size: 45px;
+    font-family: "Dancing Script";
+}
+
+.spacecraft_subtitle {
+    font-size: 25px;
+    font-family: "Source Serif Pro", sans-serif;
+    padding: 15px;
+    letter-spacing: 1px;
+}
