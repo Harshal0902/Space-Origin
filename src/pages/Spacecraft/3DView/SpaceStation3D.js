@@ -24,7 +24,7 @@ export default function SpaceStation3D() {
             <Fade top>
                 <Navbar />
             </Fade>
-            <div className="py-8 bg-indigo-900">
+            <div className="py-8">
                 <div className="w-full h-screen px-16 outline-none cursor-pointer lg:block">
                     <Canvas shadows dpr={[1, 2]} >
                         <ambientLight intensity={0.7} />

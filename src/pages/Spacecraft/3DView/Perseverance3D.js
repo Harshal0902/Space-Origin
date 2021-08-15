@@ -415,7 +415,7 @@ function Details() {
     const snap = useSnapshot(state)
     if (snap.current === "aluminum_black")
         return (
-            <div className="bg-indigo-900 pb-16 text-white w-full grid place-items-center px-64">
+            <div className=" pb-16 text-white w-full grid place-items-center px-64">
                 <h1 className=" text-xl">Wheels</h1>
                 <p classname="text-white text-lg">The Perseverance rover has six wheels, each with its own individual motor.
                     The two front and two rear wheels also have individual steering motors. This steering capability allows the vehicle to turn in place, a full 360 degrees.</p>
@@ -423,21 +423,21 @@ function Details() {
         );
     if (snap.current === "mars_2020_04")
         return (
-            <div className="bg-indigo-900 pb-16 text-white w-full grid place-items-center px-64">
+            <div className=" pb-16 text-white w-full grid place-items-center px-64">
                 <h1 className=" text-xl">Power Source</h1>
                 <p classname="text-white text-lg">The Perseverance rover requires electrical power to operate. Without power, the rover cannot move, use its science instruments, or communicate with Earth. Perseverance carries a radioisotope power system. This power system produces a dependable flow of electricity using the heat of plutonium's radioactive decay as its "fuel."</p>
             </div>
         );
     if (snap.current === "mars_2020_02")
         return (
-            <div className="bg-indigo-900 pb-16 text-white w-full grid place-items-center px-64">
+            <div className=" pb-16 text-white w-full grid place-items-center px-64">
                 <h1 className=" text-xl">Navigation Cameras (Navcams)</h1>
                 <p classname="text-white text-lg">Two color stereo Navigation Cameras, called Navcams, help engineers navigate Perseverance safely, particularly when the rover operates autonomously, making its own navigation decisions without consulting controllers on Earth.</p>
             </div>
         );
     if (snap.current === "mars_2020_07")
         return (
-            <div className="bg-indigo-900 pb-16 text-white w-full grid place-items-center px-64">
+            <div className=" pb-16 text-white w-full grid place-items-center px-64">
                 <h1 className=" text-xl">Turret</h1>
                 <p classname="text-white text-lg">At the end of the arm is the "turret." It's like a hand that carries scientific cameras, mineral and chemical analyzers for studying the past habitability of Mars, and choosing the most scientifically valuable sample to cache.</p>
             </div>
@@ -451,7 +451,7 @@ function Details() {
         );
     else {
         return (
-            <div className="pb-12 w-full bg-indigo-900">
+            <div className="pb-12 w-full ">
             </div>
         );
     }
@@ -463,7 +463,7 @@ export default function Perseverance() {
             <Fade top>
                 <Navbar />
             </Fade>
-            <div className="h-screen w-full pt-16 bg-indigo-900">
+            <div className="h-screen w-full pt-16">
                 <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
                     <ambientLight intensity={0.7} />
                     <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
