@@ -1,58 +1,53 @@
-.container {
-  display: flex;
-  justify-content: space-around;
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+function Navbar() {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    return (
+        <>
+            <nav className='navbar'>
+                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                    Space Origin
+                </Link>
+                <div className='menu-icon' onClick={handleClick}>
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className='nav-item'>
+                        <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/planet' className='nav-links' onClick={closeMobileMenu}>
+                            Planets
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/spacecrafts' className='nav-links' onClick={closeMobileMenu}>
+                            Spacecrafts
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            About Us
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link className='nav-links' onClick={closeMobileMenu}>
+                            <ExitToAppIcon/>
+                        </Link>
+                    </li>
+
+                </ul>
+            </nav>
+        </>
+    );
 }
 
-.box {
-  height: 80vh;
-  width: 20vw;
-  margin: 2rem 1rem;
-  cursor: pointer;
-}
-.box-1 {
-  background: url(../../assets/1.PNG) no-repeat;
-}
-.box-2 {
-  background: url(../../assets/2.PNG) no-repeat;
-  cursor: default;
-}
-
-.box-3 {
-  background: url(../../assets/3.png) no-repeat;
-}
-.box:hover {
-  transform: scale(1.05);
-  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s;
-}
-.box-2:hover {
-  transform: scale(1);
-}
-.box-inline {
-  height: 100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  flex-direction: column;
-}
-.box-inline p {
-  font-weight: 400;
-  margin-top: 15rem;
-  font-size: 18px;
-  line-height: 1.7;
-  padding: 1rem;
-  text-align: justify;
-  background: -webkit-linear-gradient(#56585e, #171344);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/* .paragraph {
-  margin-top: 25rem;
-  padding: 1rem;
-  text-align: justify;
-  color: darkblue;
-}
-.title {
-  position: absolute;
-} */
+export default Navbar;
