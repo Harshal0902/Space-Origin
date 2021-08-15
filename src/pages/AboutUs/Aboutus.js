@@ -20,7 +20,7 @@ function Aboutus() {
             space.
           </p>
         </div>
-        <div className="card-body">
+        <div className="card-body mt-12">
           <div className="cards">
             <div className="card">
               <div className="avatar">
@@ -36,7 +36,7 @@ function Aboutus() {
                 <br />I like to code things from scratch, and enjoy bringing
                 ideas to life in the browser.
               </div>
-              <div className="link">
+              <div className="link flex">
                 <span>
                   <a
                     href="https://www.linkedin.com/in/harshalraikwal/"
@@ -76,7 +76,7 @@ function Aboutus() {
                 <br />I like to code things from scratch, and enjoy bringing
                 ideas to life in the browser.
               </div>
-              <div className="link">
+              <div className="link flex">
                 <span>
                   <a
                     href="https://github.com/AdarshChandran2000"
@@ -117,7 +117,7 @@ function Aboutus() {
                 <br />
                 Procrastinator by day, Coder by night.
               </div>
-              <div className="link">
+              <div className="link flex">
                 <span>
                   <a
                     href="https://github.com/gauravsinhaweb"
@@ -157,7 +157,7 @@ function Aboutus() {
                 <br />
                 Practice like you never won Perform like you have never lost.
               </div>
-              <div className="link">
+              <div className="link flex">
                 <span>
                   {/* <a
                     // href="https://github.com/Teja-07"

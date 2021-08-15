@@ -29,7 +29,7 @@ function Main() {
             <Route path='/spacestation' exact component={SpaceStation3D} />
             <Route path='/perseverance' exact component={Perseverance} />
             <Route path='/about' exact component={About} />
-            <Redirect to="/" />
+            <Redirect to="/home" />
           </Switch>
         </Router>
       </div>
