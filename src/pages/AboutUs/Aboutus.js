@@ -159,15 +159,15 @@ function Aboutus() {
               </div>
               <div className="link">
                 <span>
-                  <a
-                    href="https://github.com/Teja-07"
+                  {/* <a
+                    // href="https://github.com/Teja-07"
                     rel="noopener noreferrer"
                     target="_blank"
                     style={{ color: "#000" }}
-                  >
+                  > */}
                     {" "}
                     <AiFillGithub />
-                  </a>
+                  {/* </a> */}
                 </span>
                 <span>
                   <a
