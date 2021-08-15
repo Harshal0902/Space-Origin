@@ -23,7 +23,13 @@ function Aboutus() {
         <div className="card-body">
           <div className="cards">
             <div className="card">
-              <div className="avatar"></div>
+              <div className="avatar">
+                <img
+                  src="https://avatars.githubusercontent.com/u/64153988?v=4"
+                  alt="adarsh"
+                  className="avatar"
+                />
+              </div>
               <div className="text">
                 <strong>Harshal Raikwal</strong>
                 <br />
@@ -57,7 +63,13 @@ function Aboutus() {
           </div>
           <div className="cards">
             <div className="card">
-              <div className="avatar"></div>
+              <div>
+                <img
+                  src="https://media-exp1.licdn.com/dms/image/C4D03AQHMEsD2Z9o-9A/profile-displayphoto-shrink_400_400/0/1602448822533?e=1634774400&v=beta&t=IUVJzqqwmbseEkNn84ks8WBk49ZQnP3mdQk24UvO9GI"
+                  alt="adarsh"
+                  className="avatar"
+                />
+              </div>
               <div className="text">
                 <strong>Adarsh Chandran</strong>
                 <br />
@@ -91,7 +103,14 @@ function Aboutus() {
           </div>
           <div className="cards">
             <div className="card">
-              <div className="avatar"></div>
+              <div>
+                {" "}
+                <img
+                  src="https://media-exp1.licdn.com/dms/image/C4D03AQEs-fNxCFmfDQ/profile-displayphoto-shrink_400_400/0/1600956670978?e=1634774400&v=beta&t=W8rey-PpDYiQc9WhKfAr1l0OkfpEFa0wf8RK9j48au8"
+                  alt="Gauravsinhaweb"
+                  className="avatar"
+                />
+              </div>
               <div className="text">
                 <strong>Gaurav Sinha</strong>
                 <br />
@@ -125,11 +144,11 @@ function Aboutus() {
           </div>{" "}
           <div className="cards">
             <div className="card">
-              <div className="avatar">
+              <div>
                 <img
-                  style={{ overflow: "hidden" }}
-                  src="https://avatars.githubusercontent.com/u/82213085?v=4"
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQGbrcAgp4yosw/profile-displayphoto-shrink_400_400/0/1608278444129?e=1634774400&v=beta&t=2cc5JgYMLYOuXKkFIfQbFvuzl1bOnJhRyGJ6xzpmpp8"
                   alt="teja"
+                  className="avatar"
                 />
               </div>
               <div className="text">

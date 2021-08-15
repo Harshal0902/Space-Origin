@@ -45,6 +45,10 @@
   width: 150px;
   background-color: gray;
   border-radius: 100px;
+
+  background-size: cover;
+
+  background-position: top center;
 }
 .text {
   padding: 1rem;
