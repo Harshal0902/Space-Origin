@@ -1,172 +1,58 @@
-import React from "react";
-import Fade from "react-reveal/Fade";
-import Navbar from "../../components/Navbar/Navbar";
-import "./Home.css";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-function Aboutus() {
-  return (
-    <>
-      <Fade top>
-        <Navbar />
-      </Fade>{" "}
-      <div className="about-container">
-        <div className="desc">
-          {" "}
-          <p>
-            Hello everyone we here the upcoming techies decide to create a
-            project for the hackthon which helps the students to learn more
-            about the space related things and we people created many amazing
-            things which helps the students to deep drive in to the topic of the
-            space.
-          </p>
-        </div>
-        <div className="card-body">
-          <div className="cards">
-            <div className="card">
-              <div className="avatar"></div>
-              <div className="text">
-                <strong>Harshal Raikwal</strong>
-                <br />
-                <br />I like to code things from scratch, and enjoy bringing
-                ideas to life in the browser.
-              </div>
-              <div className="link">
-                <span>
-                  <a
-                    href="https://www.linkedin.com/in/harshalraikwal/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    {" "}
-                    <AiFillGithub />
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="https://www.linkedin.com/in/harshalraikwal/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card">
-              <div className="avatar"></div>
-              <div className="text">
-                <strong>Adarsh Chandran</strong>
-                <br />
-                <br />I like to code things from scratch, and enjoy bringing
-                ideas to life in the browser.
-              </div>
-              <div className="link">
-                <span>
-                  <a
-                    href="https://github.com/AdarshChandran2000"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    {" "}
-                    <AiFillGithub />
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="https://www.linkedin.com/in/adarsh-chandran-8810b6191/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card">
-              <div className="avatar"></div>
-              <div className="text">
-                <strong>Gaurav Sinha</strong>
-                <br />
-                <br />
-                Procrastinator by day, Coder by night.
-              </div>
-              <div className="link">
-                <span>
-                  <a
-                    href="https://github.com/gauravsinhaweb"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    {" "}
-                    <AiFillGithub />
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="https://www.linkedin.com/in/gaurav-sinha-032386187/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="cards">
-            <div className="card">
-              <div className="avatar">
-                <img
-                  style={{ overflow: "hidden" }}
-                  src="https://avatars.githubusercontent.com/u/82213085?v=4"
-                  alt="teja"
-                />
-              </div>
-              <div className="text">
-                <strong>Teja</strong>
-                <br />
-                <br />
-                Practice like you never won Perform like you have never lost.
-              </div>
-              <div className="link">
-                <span>
-                  <a
-                    href="https://github.com/Teja-07"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    {" "}
-                    <AiFillGithub />
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="https://www.linkedin.com/in/teja-chinitha-34740b202/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    style={{ color: "#000" }}
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
-export default Aboutus;
+.box {
+  height: 80vh;
+  width: 20vw;
+  margin: 2rem 1rem;
+  cursor: pointer;
+}
+.box-1 {
+  background: url(../../assets/1.PNG) no-repeat;
+}
+.box-2 {
+  background: url(../../assets/2.PNG) no-repeat;
+  cursor: default;
+}
+
+.box-3 {
+  background: url(../../assets/3.png) no-repeat;
+}
+.box:hover {
+  transform: scale(1.05);
+  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s;
+}
+.box-2:hover {
+  transform: scale(1);
+}
+.box-inline {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.box-inline p {
+  font-weight: 400;
+  margin-top: 15rem;
+  font-size: 18px;
+  line-height: 1.7;
+  padding: 1rem;
+  text-align: justify;
+  background: -webkit-linear-gradient(#56585e, #171344);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .paragraph {
+  margin-top: 25rem;
+  padding: 1rem;
+  text-align: justify;
+  color: darkblue;
+}
+.title {
+  position: absolute;
+} */
