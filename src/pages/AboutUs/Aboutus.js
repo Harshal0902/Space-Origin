@@ -1,7 +1,166 @@
-export default function Aboutus() {
-    return (
-        <div>
-            About Us
+import React from "react";
+import Fade from "react-reveal/Fade";
+import Navbar from "../../components/Navbar/Navbar";
+import "./About.css";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+function Aboutus() {
+  return (
+    <>
+      <Fade top>
+        <Navbar />
+      </Fade>{" "}
+      <div className="about-container">
+        <div className="desc">
+          {" "}
+          <p>
+            Hello everyone we here the upcoming techies decide to create a
+            project for the hackthon which helps the students to learn more
+            about the space related things and we people created many amazing
+            things which helps the students to deep drive in to the topic of the
+            space.
+          </p>
         </div>
-    )
+        <div className="card-body">
+          <div className="cards">
+            <div className="card">
+              <div className="avatar"></div>
+              <div className="text">
+                <strong>Harshal Raikwal</strong>
+                <br />
+                <br />I like to code things from scratch, and enjoy bringing
+                ideas to life in the browser.
+              </div>
+              <div className="link">
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="cards">
+            <div className="card">
+              <div className="avatar"></div>
+              <div className="text">
+                <strong>Harshal Raikwal</strong>
+                <br />
+                <br />I like to code things from scratch, and enjoy bringing
+                ideas to life in the browser.
+              </div>
+              <div className="link">
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="cards">
+            <div className="card">
+              <div className="avatar"></div>
+              <div className="text">
+                <strong>Harshal Raikwal</strong>
+                <br />
+                <br />I like to code things from scratch, and enjoy bringing
+                ideas to life in the browser.
+              </div>
+              <div className="link">
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="cards">
+            <div className="card">
+              <div className="avatar"></div>
+              <div className="text">
+                <strong>Harshal Raikwal</strong>
+                <br />
+                <br />I like to code things from scratch, and enjoy bringing
+                ideas to life in the browser.
+              </div>
+              <div className="link">
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/harshalraikwal/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: "#000" }}
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
+
+export default Aboutus;

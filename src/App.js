@@ -1,44 +1,43 @@
-import { useState, useEffect } from "react";
-import Sawo from "sawo";
-import Main from "./main";
-import './App.css';
-//import Navbar from "./components/Navbar/Navbar";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Chatbot from "./components/Chatbot/Chatbot";
+// import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
+import Planet from "./pages/Planets/Planet";
+import Spacecrafts from "./pages/Spacecraft/Spacecrafts";
+import About from "./pages/AboutUs/Aboutus";
+import Login from "./pages/Login/Login";
+import sample from "./assets/shootingstar.mp4";
 
+import "./App.css";
 
-const API_KEY = "bf9b6c3d-3a10-4c85-ad24-307404a438d1";
-
-const LoginPage = () => {
-  const [isUserLoggedIn, setUserLoggedIn] = useState(false);
-  const [payload, setPayload] = useState({});
-
-  useEffect(() => {
-    var config = {
-      containerID: "sawo-container",
-      identifierType: "email",
-      apiKey: API_KEY,
-      onSuccess: (payload) => {
-        console.log("Payload : " + JSON.stringify(payload));
-        setUserLoggedIn(true);
-        setPayload(payload);
-      },
-    };
-    let sawo = new Sawo(config);
-    sawo.showForm();
-  }, []);
-
+function Main() {
   return (
-    <div className='App'>
-      {/* <Navbar/> */}
-      <div className='login'>
-        <h1>Login</h1>
-        {!isUserLoggedIn ? (
-            <div className="formContainer" id="sawo-container"></div>
-        ) : (
-          <Main/>
-        )}
+    <>
+      <video className="videoTag" autoPlay loop muted>
+        <source src={sample} type="video/mp4" />
+      </video>
+      <div className="body">
+        {" "}
+        <Router>
+          <Chatbot />
+          <Switch>
+            <Route path="/" exact component={Login} />
+            <Route path="/home" exact component={Home} />
+            <Route path="/planet" exact component={Planet} />
+            <Route path="/spacecrafts" exact component={Spacecrafts} />
+            <Route path="/about" exact component={About} />
+            <Redirect to="/" />
+          </Switch>
+        </Router>
       </div>
-    </div>
+    </>
   );
-};
+}
 
-export default LoginPage;
+export default Main;

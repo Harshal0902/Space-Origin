@@ -1,0 +1,13 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#sawo-container {
+  height: 25vh;
+  width: 25rem;
+}
