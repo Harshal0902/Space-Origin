@@ -1,42 +1,58 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
-import "./Home.css";
-import Fade from "react-reveal/Fade";
-import Navbar from "../../components/Navbar/Navbar";
-
-function Home() {
-  const history = useHistory();
-  return (
-    <>
-      <Fade top>
-        <Navbar />
-      </Fade>
-      <div className="container">
-        <div className="box box-1" onClick={() => history.push("/planet")}>
-          <div className="box-inline">
-            <h2>Planet 🪐</h2>{" "}
-          </div>
-        </div>
-        <div className="box box-2">
-          <div className="box-inline">
-            <p>
-              {" "}
-              Aute velit ex tempor exercitation reprehenderit nisi Lorem eu
-              pariatur exercitation anim voluptate sit. In laborum pariatur esse
-              sunt sunt ut est fugiat officia sunt dolore aliqua. Ipsum nulla
-              excepteur pariatur in esse. Enim duis ullamco et officia.
-              Reprehenderit culpa veniam enim amet duis elit irure.
-            </p>
-          </div>
-        </div>
-        <div className="box box-3" onClick={() => history.push("/spacecraft")}>
-          <div className="box-inline">
-            <h2>Spacecraft 🛸</h2>{" "}
-          </div>
-        </div>
-      </div>
-    </>
-  );
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
-export default Home;
+.box {
+  height: 80vh;
+  width: 20vw;
+  margin: 2rem 1rem;
+  cursor: pointer;
+}
+.box-1 {
+  background: url(../../assets/1.PNG) no-repeat;
+}
+.box-2 {
+  background: url(../../assets/2.PNG) no-repeat;
+  cursor: default;
+}
+
+.box-3 {
+  background: url(../../assets/3.png) no-repeat;
+}
+.box:hover {
+  transform: scale(1.05);
+  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s;
+}
+.box-2:hover {
+  transform: scale(1);
+}
+.box-inline {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.box-inline p {
+  font-weight: 400;
+  margin-top: 15rem;
+  font-size: 18px;
+  line-height: 1.7;
+  padding: 1rem;
+  text-align: justify;
+  background: -webkit-linear-gradient(#56585e, #171344);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .paragraph {
+  margin-top: 25rem;
+  padding: 1rem;
+  text-align: justify;
+  color: darkblue;
+}
+.title {
+  position: absolute;
+} */
