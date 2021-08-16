@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Headroom from "react-headroom";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { BiLogOut } from "react-icons/bi";
@@ -10,7 +11,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <>
+    <Headroom style={{ position: "fixed" }}>
       <nav className="navbar">
         <Link to="/" className="navbar-logo text-2xl" onClick={closeMobileMenu}>
           Space Origin 🌌
@@ -54,7 +55,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-    </>
+    </Headroom>
   );
 }
 
