@@ -39,7 +39,7 @@ function Home() {
             <div className="title" onClick={() => setIsopen(true)}>
               {" "}
               {isopen ? (
-                <YouTube videoId="2g811Eo7K8U" opts={opts} />
+                <YouTube videoId="dIoDYqG7qu0" opts={opts} />
               ) : (
                 <FaPlay className="play" />
               )}
