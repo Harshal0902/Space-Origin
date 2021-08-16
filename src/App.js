@@ -10,6 +10,8 @@ import Chatbot from "./components/Chatbot/Chatbot";
 import Home from "./pages/Home/Home";
 import Planet from "./pages/Planets/Planet";
 import Spacecrafts from "./pages/Spacecraft/Spacecrafts";
+import SpaceStation3D from "./pages/Spacecraft/3DView/SpaceStation3D"
+import Perseverance from "./pages/Spacecraft/3DView/Perseverance3D"
 import About from "./pages/AboutUs/Aboutus";
 import Login from "./pages/Login/Login";
 import sample from "./assets/shootingstar.mp4";
@@ -31,6 +33,8 @@ function Main() {
             <Route path="/home" exact component={Home} />
             <Route path="/planet" exact component={Planet} />
             <Route path="/spacecrafts" exact component={Spacecrafts} />
+              <Route path='/spacestation' exact component={SpaceStation3D} />
+            <Route path='/perseverance' exact component={Perseverance} />
             <Route path="/about" exact component={About} />
             <Redirect to="/" />
           </Switch>
