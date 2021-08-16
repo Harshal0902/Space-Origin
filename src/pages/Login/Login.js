@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import Sawo from "sawo";
 import "./Login.css";
-//import Navbar from "./components/Navbar/Navbar";
 
+// For localhost
+// const API_KEY = "bf9b6c3d-3a10-4c85-ad24-307404a438d1";
 const API_KEY = "c226814e-7ea0-48d0-909a-c05fd6ee58b7";
 
 const LoginPage = () => {
