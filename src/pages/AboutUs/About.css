@@ -4,29 +4,37 @@
   color: #eee;
   text-transform: capitalize;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
+  padding-top: 1rem;
 }
 .desc p {
-  width: 70%;
+  width: 70vw;
+  text-align: center;
 }
 .about-container {
-  height: 150vh;
+  height: 85vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgb(0, 16, 96, 0.7)
+  );
 }
 
 .project {
+  margin-top: 2rem;
   color: white;
   text-align: center;
-  font-size: 3em;
   font-weight: bold;
   padding-top: 0.5em;
+  font-size: 35px;
 }
 
 .card-body {
-  height: 80vh;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
 }

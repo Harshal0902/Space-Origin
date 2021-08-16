@@ -10,12 +10,12 @@ function Aboutus() {
         <Navbar />
       </Fade>{" "}
       <div className="about-container">
-        <h1 className="project">About the Project</h1>
-        <br />
-        <br />
+        <div className="project">
+          <h1>A little description about the Project :</h1>
+        </div>
         <div className="desc">
-          {" "}
           <p>
+            {" "}
             Our goal is to give a real-life experience to young minds who are
             very much interested in space using AR (Augmented Reality). This can
             greatly help students gain knowledge about space rovers and planets,
@@ -24,8 +24,6 @@ function Aboutus() {
             parts of space crafts than the current practices of teaching.
           </p>
         </div>
-        <br />
-        <br />
         <div className="card-body mt-12">
           <div className="cards">
             <div className="card">
