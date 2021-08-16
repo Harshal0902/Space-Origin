@@ -11,7 +11,7 @@ function Aboutus() {
       </Fade>{" "}
       <div className="about-container">
         <div className="project">
-          <h1>A little description about the Project :</h1>
+          <h1>About our Project :</h1>
         </div>
         <div className="desc">
           <p>
