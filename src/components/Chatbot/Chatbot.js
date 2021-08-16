@@ -7,12 +7,12 @@ import ChtbotImg from "../../assets/chatbot.png"
 const theme = {
     background: "#F4F5F6",
     fontFamily: "sans-serif",
-    headerBgColor: "#15bea9",
+    headerBgColor: "#1f3d7a",
     headerFontColor: "#fff",
     headerFontSize: "16px",
-    botBubbleColor: "#65b1ff",
+    botBubbleColor: "#152951",
     botFontColor: "#fff",
-    userBubbleColor: "#59dd64",
+    userBubbleColor: "#5d85d5",
     userFontColor: "#fff",
 };
 

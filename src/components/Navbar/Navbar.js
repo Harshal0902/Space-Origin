@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import { BiLogOut } from 'react-icons/bi';
+import { IconContext } from "react-icons";
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -12,7 +13,7 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    Space Origin
+                    Space Origin 🌌
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -38,9 +39,11 @@ function Navbar() {
                             About Us
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li className='nav-item logout'>
                         <Link className='nav-links' onClick={closeMobileMenu}>
-                            {/* <ExitToAppIcon/> */}
+                            <IconContext.Provider value={{color: 'white', size: "1.5em"}}>
+                                <div><BiLogOut/></div>
+                            </IconContext.Provider>
                         </Link>
                     </li>
 

@@ -11,11 +11,21 @@
   width: 70%;
 }
 .about-container {
-  height: 80vh;
+  height: 150vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
+
+.project
+{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+
 .card-body {
   height: 80vh;
   display: flex;

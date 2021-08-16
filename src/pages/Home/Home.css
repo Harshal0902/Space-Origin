@@ -4,7 +4,7 @@
 }
 
 .box {
-  height: 80vh;
+  height: 75vh;
   width: 20vw;
   margin: 2rem 1rem;
   cursor: pointer;
@@ -15,13 +15,14 @@
 .box-2 {
   background: url(../../assets/2.PNG) no-repeat;
   cursor: default;
+  padding-top: 8em;
 }
 
 .box-3 {
   background: url(../../assets/3.PNG) no-repeat;
 }
 .box:hover {
-  transform: scale(1.05);
+  transform: scale(1.10);
   transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s;
 }
 .box-2:hover {
@@ -46,6 +47,32 @@
   background: -webkit-linear-gradient(#56585e, #171344);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.topic {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.tagline {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.tagline:hover {
+  transform: scale(1.03);
+}
+
+.mainhead {
+  font-size: 4em;
+  color: white;
+  font-weight: bolder;
+}
+
+.mainhead:hover {
+  transform: scale(1.03);
 }
 /* .paragraph {
   margin-top: 25rem;

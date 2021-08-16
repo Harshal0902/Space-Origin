@@ -10,16 +10,16 @@ function Aboutus() {
         <Navbar />
       </Fade>{" "}
       <div className="about-container">
+        <h1 className='project'>About the Project</h1><br/><br/>
         <div className="desc">
           {" "}
           <p>
-            Hello everyone we here the upcoming techies decide to create a
-            project for the hackthon which helps the students to learn more
-            about the space related things and we people created many amazing
-            things which helps the students to deep drive in to the topic of the
-            space.
+          Our goal is to give a real-life experience to young minds who are very much interested in space using AR (Augmented Reality). 
+          This can greatly help students gain knowledge about space rovers and planets, by interacting with them through our website. 
+          This approach is much better for learning the visual structures of planets or various parts of space crafts than the current practices of teaching.
           </p>
-        </div>
+        </div><br/><br/>
+        <h1 className='project'>About Us</h1><br/>
         <div className="card-body mt-12">
           <div className="cards">
             <div className="card">
@@ -73,8 +73,7 @@ function Aboutus() {
               <div className="text">
                 <strong>Adarsh Chandran</strong>
                 <br />
-                <br />I like to code things from scratch, and enjoy bringing
-                ideas to life in the browser.
+                <br />A passionate programmer with a curious mind trying to innovate the world.
               </div>
               <div className="link flex">
                 <span>
@@ -183,6 +182,7 @@ function Aboutus() {
             </div>
           </div>
         </div>
+        <h1 className='project'>Credits</h1>
       </div>
     </>
   );

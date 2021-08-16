@@ -15,8 +15,8 @@ export default function Spacecrafts() {
         <div className="spacecraft_body">
             <h1 className="spacecraft_title">
                 Deep dive into space in your spacecraft
-            </h1>
-            <h2 className="spacecraft_subtitle">Explore the space with your spacecraft</h2>
+            </h1><br/><br/>
+            {/* <h2 className="spacecraft_subtitle">Explore the space with your spacecraft</h2> */}
 
             <SpaceStation />
             <Perseverance />
