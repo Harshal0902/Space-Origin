@@ -18,7 +18,7 @@ export default function Planet() {
             <div className="spacecraft_body">
                 <h1 className="spacecraft_title">
                     Explore the Space
-                </h1>
+                </h1><br/><br/>
 
                 <SolarSystem />
                 <Mercury />
