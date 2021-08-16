@@ -415,38 +415,39 @@ function Details() {
     const snap = useSnapshot(state)
     if (snap.current === "aluminum_black")
         return (
-            <div className=" pb-16 text-white w-full grid place-items-center px-64">
-                <h1 className=" text-xl">Wheels</h1>
-                <p classname="text-white text-lg">The Perseverance rover has six wheels, each with its own individual motor.
+            <div className=" pb-16 text-white w-full grid place-items-center -mt-16 px-64">
+                <h1 className="text-4xl font-sourceSerifPro">Wheels</h1>
+                <p classname="text-white text-5xl font-sourceSerifPro text-center">The Perseverance rover has six wheels, each with its own individual motor.
                     The two front and two rear wheels also have individual steering motors. This steering capability allows the vehicle to turn in place, a full 360 degrees.</p>
             </div>
         );
     if (snap.current === "mars_2020_04")
         return (
             <div className=" pb-16 text-white w-full grid place-items-center px-64">
-                <h1 className=" text-xl">Power Source</h1>
-                <p classname="text-white text-lg">The Perseverance rover requires electrical power to operate. Without power, the rover cannot move, use its science instruments, or communicate with Earth. Perseverance carries a radioisotope power system. This power system produces a dependable flow of electricity using the heat of plutonium's radioactive decay as its "fuel."</p>
+                <h1 className="text-4xl font-sourceSerifPro">Power Source</h1>
+                <p classname="text-white text-5xl font-sourceSerifPro text-center">The Perseverance rover requires electrical power to operate. Without power, the rover cannot move, use its science instruments, or communicate with Earth. Perseverance carries a radioisotope power system. This power system produces a dependable flow of electricity using the heat of plutonium's radioactive decay as its "fuel."</p>
             </div>
         );
     if (snap.current === "mars_2020_02")
         return (
             <div className=" pb-16 text-white w-full grid place-items-center px-64">
-                <h1 className=" text-xl">Navigation Cameras (Navcams)</h1>
-                <p classname="text-white text-lg">Two color stereo Navigation Cameras, called Navcams, help engineers navigate Perseverance safely, particularly when the rover operates autonomously, making its own navigation decisions without consulting controllers on Earth.</p>
+                <h1 className="text-4xl font-sourceSerifPro">Navigation Cameras (Navcams)</h1>
+                <p classname="text-white text-5xl font-sourceSerifPro text-center">Two color stereo Navigation Cameras, called Navcams, help engineers navigate Perseverance safely, particularly when the rover operates autonomously, making its own navigation decisions without consulting controllers on Earth.</p>
             </div>
         );
     if (snap.current === "mars_2020_07")
         return (
             <div className=" pb-16 text-white w-full grid place-items-center px-64">
-                <h1 className=" text-xl">Turret</h1>
-                <p classname="text-white text-lg">At the end of the arm is the "turret." It's like a hand that carries scientific cameras, mineral and chemical analyzers for studying the past habitability of Mars, and choosing the most scientifically valuable sample to cache.</p>
+                <h1 className="text-4xl font-sourceSerifPro">Turret</h1>
+                <p classname="text-white text-5xl font-sourceSerifPro text-center">At the end of the arm is the "turret." It's like a hand that carries scientific cameras, mineral and chemical analyzers for studying the past habitability of Mars, and choosing the most scientifically valuable sample to cache.</p>
             </div>
         );
     if (snap.current === "black_krinkle")
         return (
-            <div className="bg-indigo-900 pb-16 text-white w-full grid place-items-center px-64">
-                <h1 className=" text-xl">UHF Antenna</h1>
-                <p classname="text-white text-lg">At the end of the arm is the "turret." It's like a hand that carries scientific cameras, mineral and chemical analyzers for studying the past habitability of Mars, and choosing the most scientifically valuable sample to cache.</p>
+            <div className="pb-16 text-white w-full grid place-items-center px-64">
+                <h1 className="text-4xl font-sourceSerifPro">UHF Antenna</h1>
+                <p classname="text-white text-5xl font-sourceSerifPro text-center">Most often, Mars 2020 uses its ultra-high frequency (UHF) antenna (about 400 megahertz) to communicate with Earth through NASA's orbiters around Mars. Because the rover and orbiter antennas are within close range of each other, they act a little like walky-talkies compared to the long-range telecommunications with Earth provided by the low-gain and high-gain antennas.
+                </p>
             </div>
         );
     else {
