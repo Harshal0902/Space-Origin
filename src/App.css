@@ -8,7 +8,7 @@
     rgba(0, 0, 0, 0.7) 70%,
     rgb(0, 16, 96, 0.7)
   );
-  height: auto;
+  height: 100vh;
 }
 body {
   font-family: "Lato", sans-serif;

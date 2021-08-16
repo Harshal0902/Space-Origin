@@ -8,10 +8,6 @@
 }
 
 #sawo-container {
-  position: relative;
-  height: 35vh;
-  width: 28rem;
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px;
+  height: 25vh;
+  width: 25rem;
 }
